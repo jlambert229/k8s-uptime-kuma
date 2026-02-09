@@ -10,7 +10,9 @@
       "retryInterval": 60,
       "resendInterval": 0,
       "method": "GET",
-      "accepted_statuscodes": ["200-299"]
+      "accepted_statuscodes": [
+        "200-299"
+      ]
     },
     {
       "type": "http",
