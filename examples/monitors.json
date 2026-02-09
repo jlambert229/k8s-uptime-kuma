@@ -1,0 +1,107 @@
+{
+  "version": "2.0.0",
+  "monitors": [
+    {
+      "type": "http",
+      "name": "Plex Media Server",
+      "url": "http://192.168.2.245:32400/web",
+      "interval": 60,
+      "maxretries": 3,
+      "retryInterval": 60,
+      "resendInterval": 0,
+      "method": "GET",
+      "accepted_statuscodes": ["200-299"]
+    },
+    {
+      "type": "http",
+      "name": "Sonarr",
+      "url": "http://sonarr.media.lan",
+      "interval": 60,
+      "maxretries": 3,
+      "retryInterval": 60
+    },
+    {
+      "type": "http",
+      "name": "Radarr",
+      "url": "http://radarr.media.lan",
+      "interval": 60,
+      "maxretries": 3,
+      "retryInterval": 60
+    },
+    {
+      "type": "http",
+      "name": "Prowlarr",
+      "url": "http://prowlarr.media.lan",
+      "interval": 60,
+      "maxretries": 3,
+      "retryInterval": 60
+    },
+    {
+      "type": "http",
+      "name": "qBittorrent",
+      "url": "http://qbit.media.lan",
+      "interval": 60,
+      "maxretries": 3,
+      "retryInterval": 60
+    },
+    {
+      "type": "http",
+      "name": "Pi-hole Admin",
+      "url": "http://192.168.2.53/admin",
+      "interval": 60,
+      "maxretries": 3,
+      "retryInterval": 60
+    },
+    {
+      "type": "port",
+      "name": "Pi-hole DNS",
+      "hostname": "192.168.2.53",
+      "port": 53,
+      "interval": 60,
+      "maxretries": 3,
+      "retryInterval": 60
+    },
+    {
+      "type": "ping",
+      "name": "Synology NAS",
+      "hostname": "192.168.2.129",
+      "interval": 60,
+      "maxretries": 3,
+      "retryInterval": 60
+    },
+    {
+      "type": "ping",
+      "name": "EdgeRouter",
+      "hostname": "192.168.2.1",
+      "interval": 60,
+      "maxretries": 3,
+      "retryInterval": 60
+    },
+    {
+      "type": "port",
+      "name": "Kubernetes API",
+      "hostname": "192.168.2.70",
+      "port": 6443,
+      "interval": 120,
+      "maxretries": 3,
+      "retryInterval": 60
+    },
+    {
+      "type": "http",
+      "name": "Traefik Ingress",
+      "url": "http://192.168.2.244",
+      "interval": 60,
+      "maxretries": 3,
+      "retryInterval": 60
+    },
+    {
+      "type": "http",
+      "name": "Proxmox Web UI",
+      "url": "https://192.168.2.10:8006",
+      "interval": 120,
+      "maxretries": 3,
+      "retryInterval": 60,
+      "ignoreTls": true
+    }
+  ]
+}
