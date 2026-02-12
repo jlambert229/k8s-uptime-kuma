@@ -1,5 +1,8 @@
 # k8s-uptime-kuma
 
+![pre-commit](https://github.com/jlambert229/k8s-uptime-kuma/actions/workflows/pre-commit.yml/badge.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/jlambert229/k8s-uptime-kuma)
+
 Self-hosted uptime monitoring for your homelab using [Uptime Kuma](https://github.com/louislam/uptime-kuma) on Kubernetes.
 
 **Blog post:** [Network Monitoring with Uptime Kuma on Kubernetes](https://foggyclouds.io/post/k8s-uptime-kuma/)
