@@ -140,7 +140,7 @@ Uptime Kuma requires HTTPS for browser extensions.
 
 **Options:**
 1. Use cert-manager to issue real TLS cert
-2. Access via IP: `http://192.168.2.244` (if Traefik has external IP)
+2. Access via IP: `http://192.168.1.244` (if Traefik has external IP)
 3. Trust self-signed cert in browser
 
 ### Monitors show "Down" but service works
@@ -156,7 +156,7 @@ controllers:
     pod:
       dnsConfig:
         nameservers:
-          - 192.168.2.53  # Your Pi-hole
+          - 192.168.1.53  # Your Pi-hole
 ```
 
 Redeploy: `./deploy.sh`
